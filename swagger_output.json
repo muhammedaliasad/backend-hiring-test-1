@@ -5,7 +5,7 @@
     "title": "Turing Tech IVR API",
     "description": ""
   },
-  "host": "a8e8-2400-adc1-16e-c900-6d29-acf-6f56-cf04.in.ngrok.io",
+  "host": "turingtechivr.herokuapp.com",
   "basePath": "/ivr",
   "schemes": [
     "https"
