@@ -1,5 +1,6 @@
 const VoiceResponse = require('twilio').twiml.VoiceResponse;
 
+// Introductory explaination to user to press the keys.
 exports.welcome = function welcome() {
   const voiceResponse = new VoiceResponse();
 
@@ -19,6 +20,9 @@ exports.welcome = function welcome() {
   return voiceResponse.toString();
 };
 
+
+
+// Menu with input keys to select the redirect call and voicemail
 exports.menu = function menu(digit) {
   const optionActions = {
     '1': redirectCall,
@@ -30,7 +34,7 @@ exports.menu = function menu(digit) {
     : redirectWelcome();
 };
 
-
+// Voicerecording in the application
 exports.recordVoiceMail = function recordVoiceMail(digit){
   const twiml = new VoiceResponse();
   if(digit == '5'){
